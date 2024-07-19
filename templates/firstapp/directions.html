@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center">
+    <h1 id="heading">Your Journey from {{start_add}} to {{end_add}} almost covers {{distance}}KM in {{duration}}</h1>
+    <h2 id="hd1">To make sure you don't get confused we laid out instructions like you've seen below which will guide you to your destination.</h2>
+    <h2 id="hd2">We've also provided you a map through which you can have a proper view of the route you should follow</h2>
+</div>
+<iframe
+    id="embed_img"
+    width="600"
+    height="450"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/directions?key={{api_key}}&origin={{start_add}}&destination={{end_add}}">
+</iframe>
+{% for i in messages %}
+<h1 id="sentence">{{i}}</h1>
+</body>
+</html>

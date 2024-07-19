@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center">
+    {% for dict in dict_list %}
+    <img id="area_img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth={{dict.max_width}}&maxheight={{dict.max_height}}&photoreference={{dict.Photo_reference}}&key={{api_key}}" alt="Place Photo">
+    <h1 id="name">Name : {{dict.Name}}</h1>
+    <h1 id="vicinity">Address : {{dict.Vicinity}}</h1>
+    <h1 id="open">Open/Close : {{dict.Opening_hours}}</h1>
+    <a id="enroute" href="/directions/{{place_add}}/{{dict.Name}}">Start</a>
+</div>
+
+</body>
+</html>

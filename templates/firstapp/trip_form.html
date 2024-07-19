@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center">
+    <h1>Welcome {{user}}</h1>
+    <form id="form_id" method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input id="form_inp" type="submit" value="Start">
+    </form><br>
+    <h1 id="statement">Search Below The Type of Areas ( Restraunt's, Temples, Hotels etc.. ) you would like to visit around a Place.</h1>
+    <form id="srh_form_id" method="post">
+        {{srh_form.as_p}}
+        {% csrf_token %}
+        <input id="srh_form_inp" type="submit" value="Start">
+    </form>
+</div>
+</body>
+</html>
