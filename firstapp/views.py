@@ -18,13 +18,13 @@ def trip_form(request):
             to_add = form.cleaned_data["to_add"]
             request.session["from_add"] = from_add
             request.session["to_add"] = to_add
-            return redirect("drt")
+            return redirect("/directions/a/c")
         if srh_form.is_valid():
             place_add = srh_form.cleaned_data["place"]
             area_add = srh_form.cleaned_data["area"]
             request.session["place"] = place_add
             request.session["area"] = area_add
-            return redirect("drt")
+            return redirect("/directions/a/c")
     user = str(request.user)
     return render(request,"firstapp/trip_form.html",{"form":form,"srh_form":srh_form,"user":user})
 def latlng_to_place(loc1,loc2):
@@ -51,9 +51,10 @@ def place_to_latlng(addrs):
 origin = ""
 destination = ""
 def directions(request,frm_add=None,t_add=None):
-    origin = request.session["From"]
-    destination = request.session["To"]
-    if frm_add != None and t_add != None:
+    origin = request.session["from_add"]
+    destination = request.session["to_add"]
+    if frm_add != None and t_add != None and frm_add != "a" and t_add != "c":
+        print("done")
         origin = frm_add
         destination = t_add
     api_url = f'https://maps.googleapis.com/maps/api/directions/json?origin={origin}&destination={destination}&key={api_key}'
