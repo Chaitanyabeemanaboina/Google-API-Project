@@ -1,0 +1,81 @@
+div#main_tripform {
+    display: flex;
+}
+div#form1 {
+    width: 1500px;
+    height: 485px;
+    background-color: black;
+    color: antiquewhite;
+    padding-top: 150px;
+}
+h1#main_form {
+    position: relative;
+    bottom: 40px;
+    font-size: 35px;
+    font-family: fantasy;
+    text-decoration-line: underline;
+}
+label {
+    font-size: 27px;
+    font-family: fantasy;
+}
+input#form_inp {
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    font-family: fantasy;
+    font-size: 20px;
+    border-radius: 10px;
+}
+div#form2 {
+    height: 485px;
+    background: yellow;
+    padding-top: 150px;
+    width: 1420px;
+}
+h1#statement {
+    display: flex;
+    position: relative;
+    bottom: 70px;
+    font-family: fantasy;
+    text-decoration-line: underline;
+    padding: 50px;
+    margin: 0px;
+}
+form#srh_form_id {
+    position: relative;
+    bottom: 80px;
+}
+input#srh_form_inp {
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    font-family: fantasy;
+    font-size: 20px;
+    border-radius: 10px;
+}
+h1#h1 {
+    font-family: fantasy;
+    position: relative;
+    left: 51px;
+}
+div#heading_1 {
+    display: flex;
+    justify-content: center;
+}
+a {
+    display: flex;
+    background-color: black;
+    text-decoration-line: none;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    position: relative;
+    left: 437px;
+    height: 50px;
+    top: 13px;
+    border-radius: 10px;
+    font-family: fantasy;
+    color: white;
+    font-size: 24px;
+}

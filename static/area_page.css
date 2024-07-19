@@ -4,9 +4,9 @@ h1#h1_areatype {
     align-items: center;
     margin: 0px;
     height: 66px;
-    margin-bottom: 10px;
     font-family: math;
     text-decoration: underline;
+    background-color: yellow;
 }
 div#main_areatype {
     background-color: black;
