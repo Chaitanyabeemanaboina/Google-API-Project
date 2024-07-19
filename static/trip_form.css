@@ -1,3 +1,7 @@
+body{
+    background-image: url('/static/images/trip7.jpg');
+    background-size: cover;
+}
 div#main_tripform {
     display: flex;
 }
@@ -55,9 +59,11 @@ input#srh_form_inp {
     border-radius: 10px;
 }
 h1#h1 {
-    font-family: fantasy;
+    font-family: math;
     position: relative;
-    left: 51px;
+    left: 52px;
+    color: beige;
+    font-weight: 900;
 }
 div#heading_1 {
     display: flex;
