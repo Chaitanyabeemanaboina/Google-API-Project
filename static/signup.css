@@ -1,0 +1,48 @@
+body{
+    background-image: url('/static/images/trip4.jpg');
+    background-size: cover;
+}
+div#main_form {
+    background-color: #ffffffcc;
+    width: 500px;
+    position: relative;
+    left: 60px;
+    top: 60px;
+    min-height: 500px;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1#signup_st {
+    font-size: 40px;
+    font-family: math;
+    font-weight: bolder;
+}
+p {
+    font-family: math;
+    font-size: 20px;
+}
+input#form_inp {
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+a#back {
+    display: flex;
+    text-decoration-line: none;
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: math;
+}
+li {
+    font-size: 20px;
+    font-family: math;
+}

@@ -1,0 +1,90 @@
+body{
+    background-image: url('/static/images/trip1.jpg');
+    background-size: cover;
+}
+a#signup {
+    display: inline-block;
+    text-decoration-line: none;
+    background-color: black;
+    height: 80px;
+    width: 400px;
+    font-size: 40px;
+    color: white;
+    padding-top: 30px;
+    font-family: math;
+    font-weight: bolder;
+    position: relative;
+    left: 100px;
+    transition-property:all;
+    transition-duration:0.75s;
+}
+a#login {
+    display: inline-block;
+    background-color: white;
+    text-decoration-line: none;
+    height: 80px;
+    width: 400px;
+    font-size: 40px;
+    padding-top: 30px;
+    color: black;
+    position: relative;
+    top: 120px;
+    right: 300px;
+    font-family: math;
+    font-weight: bolder;
+    transition-property:all;
+    transition-duration:0.75s;
+}
+div#main1 {
+    display: flex;
+    position: relative;
+    top: 186px;
+    left: 0px;
+}
+h1#main {
+    position: fixed;
+    top: 0px;
+    font-size: 100px;
+    width: 1600px;
+    background-color: #0000006b;
+    color: white;
+    right: 0px;
+    height: 150px;
+    margin-top: 0px;
+    font-family: math;
+    padding-top: 20px;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+#main:hover{
+       background-color: white;
+       color: black;
+}
+#signup:hover{
+       background-color: white;
+       color: black;
+}
+#login:hover{
+       background-color: black;
+       color: white;
+}
+h1#caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 120px;
+    background-color: white;
+    height: 70px;
+    font-size: 40px;
+    font-family: sans-serif;
+    transition-property: all;
+    transition-duration: 1s;
+    width: 1000px;
+    right: 11px;
+}
+#caption:hover{
+       background-color: black;
+       color: white;
+}
+

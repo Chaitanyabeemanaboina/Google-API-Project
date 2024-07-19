@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
 </head>
-<body>
-<div align="center">
-<h1 id="head1">Welcome to C-Routes</h1>
-<h2 id="head2">Plan Your Trip in the best way possible</h2>
+<body align="center">
+<h1 id="main">Welcome to C-Routes</h1>
+<h1 id="caption">Plan Your Trip in the best way possible</h1>
+<div id="main1">
 <a id="signup" href="/signup">Signup</a>
 <a id="login" href="/accounts/login">Login</a>
     </div>
 </body>
 </html>
+
