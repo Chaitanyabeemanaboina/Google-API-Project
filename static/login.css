@@ -1,0 +1,62 @@
+body{
+    background-image: url('/static/images/trip5.jpg');
+    background-size: cover;
+}
+div#main_form {
+    background-color: #ffffff85;
+    width: 500px;
+    position: relative;
+    left: 60px;
+    top: 60px;
+    min-height: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1#login_lg {
+    font-size: 40px;
+    font-family: math;
+    font-weight: bolder;
+}
+p {
+    font-family: math;
+    font-size: 20px;
+}
+input#form_input {
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+a#back {
+    display: flex;
+    text-decoration-line: none;
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: math;
+    position: relative;
+}
+a#forgot {
+    display: flex;
+    text-decoration-line: none;
+    background-color: black;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-size: 20px;
+    color: white;
+    font-family: math;
+    border-radius: 10px;
+}
+li {
+    font-size: 20px;
+    font-family: math;
+}
