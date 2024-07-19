@@ -1,0 +1,30 @@
+h1#h1_areatype {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 66px;
+    margin-bottom: 10px;
+    font-family: math;
+    text-decoration: underline;
+}
+div#main_areatype {
+    background-color: black;
+    height: 550px;
+    overflow-y: scroll;
+    color: white;
+    font-family: math;
+}
+a#back_areatype {
+    background-color: black;
+    text-decoration-line: none;
+    display: flex;
+    height: 40px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    color: white;
+}

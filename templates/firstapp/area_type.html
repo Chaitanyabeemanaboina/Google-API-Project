@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'area_type.css' %}">
 </head>
 <body>
 <div align="center">
+    <h1 id="h1_areatype">Happy Traveling</h1>
+    <div id="main_areatype">
     {% for dict in dict_list %}
     <img id="area_img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth={{dict.max_width}}&maxheight={{dict.max_height}}&photoreference={{dict.Photo_reference}}&key={{api_key}}" alt="Place Photo">
     <h1 id="name">Name : {{dict.Name}}</h1>
     <h1 id="vicinity">Address : {{dict.Vicinity}}</h1>
     <h1 id="open">Open/Close : {{dict.Opening_hours}}</h1>
     <a id="enroute" href="/directions/{{place_add}}/{{dict.Name}}">Start</a>
+    {% endfor %}
+        </div>
     <a id="back_areatype" href="/trip_form">Back</a>
 </div>
 

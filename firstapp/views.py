@@ -24,7 +24,7 @@ def trip_form(request):
             area_add = srh_form.cleaned_data["area"]
             request.session["place"] = place_add
             request.session["area"] = area_add
-            return redirect("/directions/a/c")
+            return redirect("/area_type")
     user = str(request.user)
     return render(request,"firstapp/trip_form.html",{"form":form,"srh_form":srh_form,"user":user})
 def latlng_to_place(loc1,loc2):
