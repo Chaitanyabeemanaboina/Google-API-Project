@@ -1,12 +1,14 @@
 from django.shortcuts import render,redirect
 from .forms import Trip_form,Search_form,Signup
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 import requests
 api_key = settings.GOOGLE_MAPS_API_KEY
 
 def index(request):
     return render(request,"firstapp/index.html")
+@login_required
 def trip_form(request):
     form = Trip_form()
     srh_form = Search_form()
@@ -50,6 +52,7 @@ def place_to_latlng(addrs):
 
 origin = ""
 destination = ""
+@login_required
 def directions(request,frm_add=None,t_add=None):
     origin = request.session["from_add"]
     destination = request.session["to_add"]
@@ -92,6 +95,7 @@ def directions(request,frm_add=None,t_add=None):
     return render(request,"firstapp/directions.html",{"distance":distance,"duration":duration,"end_add":end_add ,"start_add":start_add,"messages":messages,"api_key":api_key})
 
 type_area = ""
+@login_required
 def area_type(request):
     place_add = request.session["place"]
     type_area = request.session["area"]
